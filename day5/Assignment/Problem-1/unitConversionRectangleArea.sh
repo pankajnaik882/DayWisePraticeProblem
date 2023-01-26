@@ -1,11 +1,13 @@
 length=60
 breadth=40
+echo "The length of the plot is : $length ft "
+echo "The Width of the plot is : $breadth ft "
 area=$(($length*$breadth))
-echo "Area of rectangular plot: "
-echo $area"ft"
+echo "Area Of Rectangular Plot is : $area ft "
 
-meter=$(($area/3.281))
-echo "Area in meter: "$meter
-
-echo "Area of 25 such plots: "
-echo $(($area/43560))"acer"
+centimeter=30
+footToCentimeter=$(($area*$centimeter))
+echo "Foot to Centimeter : $footToCentimeter centimeter"
+meter=100
+inMeter=$(($footToCentimeter/$meter))
+echo "Centimeter to Meter : $inMeter meter"
